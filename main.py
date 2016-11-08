@@ -20,7 +20,7 @@ import model
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         x = model.Person()
-        self.response.write('Hello world!' + x)
+        self.response.write('Hello world! ' + x)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
